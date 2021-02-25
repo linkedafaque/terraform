@@ -1,10 +1,10 @@
 resource "aws_instance" "web" {
-  ami = "ami-0e999cbd62129e3b1"
+  ami           = "ami-0e999cbd62129e3b1"
   instance_type = "t2.micro"
 }
 
 resource "aws_eip" "lb" {
-  vpc      = true
+  vpc = true
 }
 
 // Print out only public ip address
